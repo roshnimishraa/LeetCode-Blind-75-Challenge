@@ -1,8 +1,19 @@
+Efficient Approach  : Unordered Map 
+Time Complexity: O(N)
+Auxiliary Space: O(N)
 
-Efficient Approach : Two Pointer 
+1. Initialize a variable, say ans, to store the maximum number of pairs with the sum K.
+2. Initialize a hash table, say S, to store the frequency of elements in arr[].
+3. Traverse the array arr[] using a variable, say i, and perform the following steps:
+4. If the frequency of (K – arr[i]) is positive, then increment ans by 1 and decrement the frequency of (K – arr[i]) by 1.
+5. Otherwise, insert arr[i] with frequency 1 in the Hash Table.
+6. After completing the above steps, print the value of ans as the result.
 
-TC : O(N) 
-SC : O(1) 
+
+##################Better Approach : Two Pointer 
+
+Time Complexity: O(N*log N) sort func take O(log N ) + O(N) 
+Auxiliary Space: O(1)
 
 Algorithm : 
 1. First take two pointer i,j where 
