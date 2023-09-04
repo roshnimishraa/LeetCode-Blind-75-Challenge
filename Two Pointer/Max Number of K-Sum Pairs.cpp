@@ -9,6 +9,23 @@ Auxiliary Space: O(N)
 5. Otherwise, insert arr[i] with frequency 1 in the Hash Table.
 6. After completing the above steps, print the value of ans as the result.
 
+class Solution {
+public:
+    int maxOperations(vector<int>& nums, int k) {
+        int count=0;
+        unordered_map<int,int> s;
+        for(auto i:nums){
+            if(s[k-i] > 0){
+                s[k-i]--;
+                count++;
+            }
+            else{
+                s[i]++;
+            }
+        }
+        return count;
+    }
+};
 
 ##################Better Approach : Two Pointer 
 
