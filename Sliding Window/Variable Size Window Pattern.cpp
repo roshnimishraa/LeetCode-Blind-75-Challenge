@@ -1,10 +1,7 @@
 sum = given
 sum = k
 
- Approach :
-1. Find out calculations
-2. ans <- calculation
-3.  check for
+
   
 int i=0,j=0
 while(j<size) {
