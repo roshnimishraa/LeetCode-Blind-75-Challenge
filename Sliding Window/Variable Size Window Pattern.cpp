@@ -1,4 +1,7 @@
+sum = given
+sum == k
 
+  
 int i=0,j=0
 while(j<size) {
   calculations 
