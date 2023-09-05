@@ -43,25 +43,25 @@ into map with their frequency.
 3. check if column vector has any occurrence into map. If there exist any occurrence into map then keep 
 adding their count into temp vector.
 
-
 class Solution {
 public:
     int equalPairs(vector<vector<int>>& grid) {
-        int n = grid.size();
-      int count = 0;
-    map<vector<int>, int> mp;
- //1 store row and freq in map
-        for(int row = 0; row < n; row++) {
-   mp[grid[row]]++;
-   }
- //2 iterate through column 
-        for(int c = 0; c < n; c++) {
-            vector<int> temp;
-            for(int r = 0; r<n; r++) {
-                temp.push_back(grid[r][c]);
-            }
-           count += mp[temp];
-        }
-        return count;
+        int n=grid.size();
+  map<vector<int>, int> map;
+int count=0;
+for(int row=0;row<n;row++)
+{
+   map[grid[row]]++;
+}
+// iterate through col
+for(int col=0;col<n;col++){
+       vector<int> temp;
+    for(int row=0;row<n;row++){
+     
+        temp.push_back(grid[row][col]);
+    }
+    count += map[temp];
+}
+return count;
     }
 };
