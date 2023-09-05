@@ -29,6 +29,6 @@ public:
         j++;
     }
     }
-    return maxi/(double)k;
+ return (double)maxi/k;
     }
 };
