@@ -1,11 +1,10 @@
 sum = given
-sum == k
+sum = k
 
  Approach :
 1. Find out calculations
 2. ans <- calculation
-3. slide the window 
-
+3.  check for
   
 int i=0,j=0
 while(j<size) {
