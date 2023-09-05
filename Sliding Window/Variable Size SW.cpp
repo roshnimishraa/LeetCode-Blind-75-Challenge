@@ -6,14 +6,12 @@ sum = k
 int i=0,j=0
 while(j<size) {
   calculations 
-  if(condition < k)
-  { j++  
+  if(condition <= k)
+  { 
+  calculation -> ans 
+  j++  
   } 
-    else if (condition == k) {
-calculation -> ans 
-  //slide the window 
-      j++
-    }
+   
       else if(condition > k) {
         while(condition > k) {
           remove calculation for i //slide the window 
