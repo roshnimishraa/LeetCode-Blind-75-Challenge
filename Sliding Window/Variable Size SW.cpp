@@ -6,16 +6,16 @@ sum = k
 int i=0,j=0
 while(j<size) {
   calculations 
-  if(j-i+1 < k)
+  if(condition < k)
   { j++  
   } 
-    else if (j-i+1 == k) {
+    else if (condition == k) {
 calculation -> ans 
   //slide the window 
       j++
     }
-      else if(j-i+1 > k) {
-        while(j-i+1 > k) {
+      else if(condition > k) {
+        while(condition > k) {
           remove calculation for i //slide the window 
             i++
         }
