@@ -1,3 +1,19 @@
+TC : O(N) 
+SC : O(1) 
+
+Algo 
+1. Check char is vowel or not 
+2. if vowel then count ++
+3. if window size < k then j++
+4. else if window size == k find max count 
+initialize maxi = 0 
+    maxi = max(maxi,count) 
+5. remove for i 
+ isVowel(s[i])  count--
+6. slide the window i++ j++
+7. return ans
+
+
 class Solution {
     private:
     bool isVowel(char ch)
